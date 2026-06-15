@@ -20,6 +20,8 @@ acceleration.
 - CS336 selected lectures;
 - Hugging Face Transformers generation docs;
 - tiny-llm book for inference structure.
+- gpt-fast source reading after implementing your own naive and KV-cache
+  generation loops.
 
 ## Exercises
 
@@ -37,4 +39,3 @@ Use [learning-note.md](../templates/learning-note.md) for:
 - KV cache memory formula;
 - attention FLOPs and memory;
 - MHA vs MQA vs GQA.
-

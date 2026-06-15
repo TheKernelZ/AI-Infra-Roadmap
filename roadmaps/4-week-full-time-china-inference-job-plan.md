@@ -162,6 +162,13 @@ Build:
 - Print or record KV cache shapes.
 - Compare naive generation vs KV-cache generation.
 
+Source reading, time-boxed to 2-3 hours:
+
+- Read `gpt-fast` as a compact PyTorch reference implementation.
+- Focus only on `generate.py`, `model.py`, KV cache setup, sampling, and
+  `torch.compile`.
+- Do not copy it before your own KV cache loop works.
+
 Measure:
 
 - prefill latency;
@@ -172,15 +179,19 @@ Measure:
 Write:
 
 - `notes/week1-kv-cache-generation.md`
+- `source-reading/gpt-fast-generation-loop.md`
 
 Interview answers:
 
 - Why do we need KV cache?
 - How do you estimate KV cache memory?
+- What does `gpt-fast` optimize that a naive generation loop does not?
 
 Exit criteria:
 
 - You can write the KV cache memory formula from memory.
+- You can explain why `gpt-fast` is useful for single-request generation
+  latency but does not replace a serving engine such as vLLM.
 
 ### Day 5: Week 1 Benchmark Report
 
@@ -592,6 +603,7 @@ Study:
 - TensorRT-LLM;
 - FP8/INT8/INT4;
 - AWQ/GPTQ basics;
+- `gpt-fast` int8/int4 and speculative decoding as a compact source reference;
 - SGLang;
 - LMDeploy;
 - LightLLM;
@@ -606,6 +618,9 @@ Compare:
 ```text
 vLLM vs TensorRT-LLM vs SGLang vs LMDeploy
 ```
+
+Keep `gpt-fast` separate from this comparison: use it as a PyTorch-native
+generation and optimization reference, not as a production serving framework.
 
 Interview answers:
 
@@ -698,6 +713,7 @@ reports/week2-kv-cache-manager-report.md
 reports/week3-vllm-workload-sweep.md
 reports/week3-vllm-prefix-chunked-prefill.md
 reports/week4-triton-rmsnorm-or-rope.md
+source-reading/gpt-fast-generation-loop.md
 source-reading/vllm-request-lifecycle.md
 source-reading/vllm-scheduler-kv-cache.md
 design/week4-prefill-decode-disaggregation.md
@@ -778,8 +794,9 @@ If you fall behind, protect these deliverables first:
 1. Mini inference engine with KV cache.
 2. KV cache memory formula and explanation.
 3. Continuous batching simulation.
-4. vLLM benchmark report or source-reading report.
-5. Chinese interview answers.
-6. Chinese resume bullets.
+4. `gpt-fast` source-reading note for the generation loop.
+5. vLLM benchmark report or source-reading report.
+6. Chinese interview answers.
+7. Chinese resume bullets.
 
 These have the highest job-search return.

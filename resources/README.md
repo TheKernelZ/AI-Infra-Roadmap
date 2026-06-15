@@ -14,6 +14,8 @@ This file tracks the main materials used by the roadmap.
 - vLLM documentation
 - TensorRT-LLM documentation
 - Hugging Face Transformers generation and cache docs
+- gpt-fast for a compact PyTorch-native generation, KV cache, quantization, and
+  speculative decoding reference
 - CUDA C++ Programming Guide
 - Triton tutorials
 - GPU MODE lectures
@@ -32,4 +34,3 @@ This file tracks the main materials used by the roadmap.
 
 Use courses for structure, docs for implementation details, and papers for
 design tradeoffs. Do not turn this into an unbounded link collection.
-
