@@ -36,4 +36,3 @@ Purpose: understand and design KV cache systems for long-context serving.
 - How PagedAttention differs from contiguous KV allocation.
 - When prefix caching helps and when it does not.
 - How MQA/GQA reduce KV memory.
-

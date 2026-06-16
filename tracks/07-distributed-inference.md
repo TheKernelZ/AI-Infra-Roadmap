@@ -23,7 +23,9 @@ Purpose: learn how low-latency serving changes at cluster scale.
 - Dynamo;
 - LMCache;
 - vLLM disaggregated prefill documentation;
-- TensorRT-LLM distributed serving documentation.
+- TensorRT-LLM distributed serving documentation;
+- How to Scale Your Model for tensor parallelism, network rooflines, and
+  communication bottlenecks.
 
 ## Exercises
 
@@ -38,4 +40,3 @@ Purpose: learn how low-latency serving changes at cluster scale.
 - What makes KV transfer expensive.
 - How KV-aware routing improves cache reuse.
 - How distributed inference differs from distributed training.
-

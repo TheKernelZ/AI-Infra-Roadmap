@@ -20,7 +20,9 @@ This track assumes CUDA starts from zero.
 - GPU MODE lectures;
 - CUDA C++ Programming Guide;
 - Programming Massively Parallel Processors;
-- Triton tutorials.
+- Triton tutorials;
+- How to Scale Your Model for roofline thinking, attention IO, and parallelism
+  intuition.
 
 ## Exercises
 
@@ -39,4 +41,3 @@ This track assumes CUDA starts from zero.
 - Occupancy is useful but not the only goal.
 - Why attention optimization is often about IO.
 - How to read a simple Nsight Compute report.
-

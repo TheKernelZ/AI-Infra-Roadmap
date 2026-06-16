@@ -20,6 +20,8 @@ acceleration.
 - CS336 selected lectures;
 - Hugging Face Transformers generation docs;
 - tiny-llm book for inference structure.
+- Build a Large Language Model From Scratch for attention, GPT block, and
+  generation-loop foundations.
 - gpt-fast source reading after implementing your own naive and KV-cache
   generation loops.
 
